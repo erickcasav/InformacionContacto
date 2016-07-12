@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.erickcasav.informacioncontacto.MainActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre_contacto"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/lyFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilNombre">
+
+        <TextView
+            android:id="@+id/tvFecha"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/fecha_nacimiento_contacto"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <ImageView
+            android:id="@+id/ivFechaNacimiento"
+            android:layout_marginLeft="@dimen/espacio_imagen_calendario"
+            android:layout_width="@dimen/imagen_calendario"
+            android:layout_height="@dimen/imagen_calendario"
+            android:src="@drawable/ic_date_range_black_48dp"
+            android:onClick="asignaFecha"
+            />
+
+    </LinearLayout>
+
+    <!--
+    <DatePicker
+        android:layout_below="@id/lyFecha"
+        android:id="@+id/dpFecha"
+        android:calendarViewShown="false"
+        android:layout_width="wrap_content"
+        android:datePickerMode="spinner"
+        android:layout_height="wrap_content"></DatePicker>
+-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lyFecha">
+        <EditText
+            android:id="@+id/txtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/telefono_contacto"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilTelefono">
+        <EditText
+            android:id="@+id/txtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email_contacto"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/tilDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilEmail">
+        <EditText
+            android:id="@+id/txtDescripcion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/descripcion_contacto"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_siguiente"
+        android:theme="@style/BotonTheme"/>
+</RelativeLayout>

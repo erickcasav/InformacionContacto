@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Información de contacto</string>
+    <string name="nombre_contacto">Nombre completo</string>
+    <string name="telefono_contacto">Telefono</string>
+    <string name="email_contacto">Email</string>
+    <string name="descripcion_contacto">Descripción contacto</string>
+    <string name="boton_siguiente">Siguiente</string>
+    <string name="fecha_nacimiento_contacto">Fecha de nacimiento</string>
+    <string name="Titulo_confirmar">Confirmar datos</string>
+    <string name="fecha_confirmar">Fecha Nacimiento:</string>
+    <string name="telefono_confirmar">Tel.:</string>
+    <string name="email_confirmar">Email:</string>
+    <string name="descripcion_confirmar">Descripción:</string>
+    <string name="boton_confirmar">Editar Datos</string>
+</resources>

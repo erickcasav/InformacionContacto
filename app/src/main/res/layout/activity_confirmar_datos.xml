@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.erickcasav.informacioncontacto.ConfirmarDatosActivity">
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/Titulo_confirmar"/>
+
+    <TextView
+        android:id="@+id/tvNombreConfirmar"
+        android:layout_below="@id/tvTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nombre"/>
+
+    <LinearLayout
+        android:id="@+id/linFechaNacimiento"
+        android:layout_marginTop="@dimen/espacio_superior"
+        android:layout_below="@id/tvNombreConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fecha_confirmar"/>
+
+        <TextView
+            android:id="@+id/tvFechaConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacio_imagen_calendario"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linTelefono"
+        android:layout_below="@id/linFechaNacimiento"
+        android:layout_marginTop="@dimen/espacio_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telefono_confirmar"/>
+
+        <TextView
+            android:id="@+id/tvTelefonoConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacio_imagen_calendario"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linEmail"
+        android:layout_below="@id/linTelefono"
+        android:layout_marginTop="@dimen/espacio_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email_confirmar"/>
+
+        <TextView
+            android:id="@+id/tvEmailConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacio_imagen_calendario"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linDescripcion"
+        android:layout_below="@id/linEmail"
+        android:layout_marginTop="@dimen/espacio_superior"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_confirmar"/>
+
+        <TextView
+            android:id="@+id/tvDescripcionConfirmar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/espacio_imagen_calendario"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirmarDatos"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/boton_confirmar"
+        android:theme="@style/BotonTheme"/>
+</RelativeLayout>
